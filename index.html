@@ -1,4 +1,70 @@
----
-layout: home
-# Index page
----
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 数学笔记下载站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f1f5f9;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            padding: 2rem 1rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        h1 { font-size: 2rem; background: linear-gradient(135deg, #0f172a, #2d3a6e); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .note-list { display: flex; flex-direction: column; gap: 1rem; }
+        .note-card {
+            background: white;
+            border-radius: 20px;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .info { flex: 1; }
+        .title { font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem; }
+        .desc { color: #475569; font-size: 0.9rem; }
+        .btn {
+            background: #0f172a;
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn:hover { background: #1e293b; }
+        @media (max-width: 640px) {
+            .note-card { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📐 数学笔记分享站</h1>
+        <p style="color: #334155; margin-top: 0.5rem;">点击下载 PDF 文件，永久免费</p>
+    </div>
+    <div class="note-list">
+        <div class="note-card">
+            <div class="info">
+                <div class="title">📘 9709 P1 大纲与真题对应</div>
+                <div class="desc">CIE A-Level 数学 P1 考纲知识点与历年真题对照表，复习必备。</div>
+                <div style="font-size: 0.75rem; color: #64748b; margin-top: 0.3rem;">文件：9709 P1大纲与真题对应.pdf</div>
+            </div>
+            <a class="btn" href="9709 P1大纲与真题对应.pdf" download target="_blank">⬇️ 下载 PDF</a>
+        </div>
+    </div>
+    <div style="margin-top: 2rem; text-align: center; font-size: 0.8rem; color: #62748c;">
+        📌 所有笔记由个人整理，仅供学习交流使用
+    </div>
+</div>
+</body>
+</html>
